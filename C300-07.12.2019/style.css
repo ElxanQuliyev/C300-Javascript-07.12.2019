@@ -1,0 +1,49 @@
+#bir{
+    background: red;
+    height: 200px;
+    width: 200px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    padding: 10px;
+    cursor: pointer;
+}
+.menu li ul{
+    background: salmon;
+    color:gold;
+    padding: 15px;
+    border-radius: 8px;
+}
+.dropMenu{
+    position: relative;
+    transition: all 1s;
+
+}
+.dropMenu:hover .dropDown{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+.dropDown{
+    position: absolute;
+    width: 100px;
+    top:100%;
+    visibility: hidden;
+    opacity: 0;
+}
+.dropMenu li{
+    cursor: pointer;
+    left: 0
+}
+.dropDown li:hover{
+    position: relative;
+    left: 15px;
+    transition: all .3s;
+}
